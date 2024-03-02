@@ -4,6 +4,12 @@
     box-sizing: border-box;
   }
   
+body p{
+  font-size: 16px;
+  font-weight: 400;
+  color:#5A5A5D;
+}
+
   ul {
     max-width: 550px;
     margin: 0 auto 50px auto;
@@ -29,18 +35,18 @@
     font-size: 24px;
   }
   
-  ul {
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   
-  ul li {
+  nav ul li {
     display: inline;
     margin-right: 20px;
   }
   
-  ul li a {
+ nav ul li a {
     color: #424247;
     text-decoration: none;
   }
@@ -108,7 +114,145 @@
     cursor: pointer;
   }
   
-  .button:hover {
+  .button-1:hover {
     background-color: #ddd;
   }
+.input-1{
+  position:relative;
+}
+select{
+  background:transparent;
+  border:none;
+  outline:none ;
+}
+.select-1{
+  position:absolute;
+  top:0;
+  right: 0;
+}
+
+.button-1 {
+  padding-left: 30px; 
+  background-image: url('https://i.ibb.co/s2JfBQD/select.png'); 
+  background-repeat: no-repeat;
+  background-position: right center; 
+}
+
+
+.icon-1 {
+  width: calc(100% - 30px); icon */
+}
+
+.find-button{
+  background:#FF5400;
+  width:174px;
+}
+input{
+  width:174px;
+}
+
+.find-button {
+  background-image: url('https://i.ibb.co/bz83vjs/search-icon.png'); 
+  background-repeat: no-repeat;
+  background-position: left center; 
+  
+}
+button{
+  
+  background:#FF5400;
+}
+
+.popular {
+  width: 1170px;
+  height: 550px;
+  margin: 50px auto;
+}
+
+.popular-container {
+  display: flex;
+  
+}
+.popular-container ul  {
+ list-style-type: disc;
+  
+}
+
+
+.popular-left {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+ 
+}
+
+.popular-right {
+  width: 50%;
+}
+
+.popular-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popular-left p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color:#5A5A5D;
+}
+.popular-list{
+  list-style-type: disc;
+}
+.read-more {
+  background-color: #FF5400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #FF6E2E;
+}
+
+.popular-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*added  Media Query for Small Devices (600px and below) */
+@media screen and (max-width: 600px) {
+
+  
+
+  .popular-container{
+    flex-direction: column;
+    margin: 0 auto;
+    
+  }
+  .popular {
+    margin: 20px auto; 
+  }
+
+  .popular-left,
+  .popular-right {
+    padding: 10px;
+  }
+}
+
+/* added Media Query for Large Devices (992px and above) */
+@media screen and (min-width: 992px) {
+  .popular-container {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .popular-left,
+  .popular-right {
+    width: 50%; 
+  }
+}
+
   
