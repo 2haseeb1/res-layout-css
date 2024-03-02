@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #fff;
+    color: black;
+    padding: 20px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: #424247;
+    text-decoration: none;
+  }
+  
+  ul li a.active {
+    font-weight: bold;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .banner {
+    width: 1170px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('https://i.ibb.co/8dPty1b/Group-13-1-1.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 16px;
+    position:relative;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 106px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: #fff; 
+    font-size: 64px; 
+    font-weight: 800;
+  }
+  .banner-paragraph {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 120%;
+  }
+  .button-container {
+    position: absolute;
+    top: 180px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+  }
+  
