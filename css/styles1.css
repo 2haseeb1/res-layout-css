@@ -230,6 +230,7 @@ button{
   .popular-container{
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
     
   }
   .popular {
@@ -247,6 +248,7 @@ button{
   .popular-container {
     flex-direction: row;
     margin: 0 auto;
+    
   }
 
   .popular-left,
@@ -280,3 +282,81 @@ button{
     .row-3 {
       grid-template-columns: 473px 474px;
     }
+
+    section {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+  
+      .choose-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .choose-paragraph {
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+  
+      /* Card styles */
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .card {
+        width: calc(50% - 10px); /* Adjust for margin */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .card-paragraph {
+        line-height: 1.5;
+      }
+  
+      .card img {
+        width: 64px;
+        height: 64px;
+        margin-right: 10px;
+      }
+
+
+      /* Single section styles */
+    .single-section {
+        margin: 50px auto;
+        width: 573px;
+        height: 264px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+  
+      .single-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .single-paragraph {
+        line-height: 1.5;
+      }
+  
+      .single-img {
+        width: 64px;
+        height: 64px;
+      }
+
+      
