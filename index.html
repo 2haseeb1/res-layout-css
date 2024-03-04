@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
-    <link rel="stylesheet" href="./css/styles1.css" />
+    <link rel="stylesheet" href="./css/styles3.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,558 +14,818 @@
     />
   </head>
   <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-body p{
-  font-size: 16px;
-  font-weight: 400;
-  color:#5A5A5D;
-}
-
-  ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
-  }
-  
-  header {
-  background-color: #fff;
-  color: black;
-  padding: 20px 0;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 50px;
-  display: flex;
-  gap: 3px;
-  justify-content: center;
-  align-items: center;
-}
-
-nav .travel {
-  color: #ff5400;
-  font-weight: 800;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #424247;
-  text-decoration: none;
-}
-
-ul li a.active {
-  font-weight: bold;
-  color: #ff5400;
-}
-
-.display-hamburger {
- 
-}
-
-
-@media (max-width: 600px) {
-  nav ul {
-    display: block;
-  }
-  
-  .display-hamburger {
-    display: block;
-  }
-  
-  nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 50px;
-  display: flex;
-  gap: 3px;
-  justify-content: center;
-  align-items: center;
-}
-
-nav .travel {
-  color: #ff5400;
-  font-weight: 800;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #424247;
-  text-decoration: none;
-}
-
-ul li a.active {
-  font-weight: bold;
-  color: #ff5400;
-}
-
-.display-hamburger {
-  display: none;
-}
-.display-hamburger img {
-  display: block; 
-  width: 20px; 
-  height: auto; 
-}
-
-@media (max-width: 600px) {
-  nav{
- width:90%;
- margin: 0 auto;
-  }
-  nav ul a{
-    display: none;
-  }
-  
-  .display-hamburger {
-    display: block;
-  }
-  
-  .display-hamburger img {
-    display: block; 
-    width: 20px; 
-    height: auto; 
-  }
-
-  nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-
-@media (min-width: 992px) {
-  .display-hamburger {
-    display: none;
-  }
-  .display-hamburger img{
-    display: none;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-}
-
-  nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-
-@media (min-width: 992px) {
-  .display-hamburger {
-    display:none;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-}
-  .content {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .banner {
-    width: 1170px;
-    height: 500px;
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('https://i.ibb.co/8dPty1b/Group-13-1-1.png');
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    border-radius: 16px;
-    position:relative;
-  }
-
-  .banner-text {
-    position: absolute;
-    top: 106px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    color: #fff; 
-    font-size: 64px; 
-    font-weight: 800;
-  }
-  .banner-paragraph {
-    position: absolute;
-    top: 173px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    width: 120%;
-  }
-  .button-container {
-    position: absolute;
-    top: 332px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.30);
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button-1:hover {
-    background-color: #ddd;
-  }
-.input-1{
-  position:relative;
-}
-select{
-  background:transparent;
-  border:none;
-  outline:none ;
-}
-.select-1{
-  position:absolute;
-  top:0;
-  right: 0;
-}
-
-.button-1 {
-  padding-left: 30px; 
-  background-image: url('https://i.ibb.co/s2JfBQD/select.png'); 
-  background-repeat: no-repeat;
-  background-position: right center; 
-}
-
-
-.icon-1 {
-  width: calc(100% - 30px); icon */
-}
-
-.find-button{
-  background:#FF5400;
-  width:174px;
-}
-input{
-  width:174px;
-}
-
-.find-button {
-  background-image: url('https://i.ibb.co/bz83vjs/search-icon.png'); 
-  background-repeat: no-repeat;
-  background-position: left center; 
-  
-}
-button{
-  
-  background:#FF5400;
-}
-
-/*  media-query for banner section making responsive*/
-@media only screen and (max-width: 600px){
-.banner{
-  width:70%;
-  height: 483px;
-}
-.banner-text{
-  color:#fff;
-  font-size:22px;
-  text-align: center;
-  width:max-content;
-  margin-top: -68px;
-}
-
-.banner-paragraph{
-  top:60px;
-  font-size: 15px;
-}
-.button-container{
-  top:181px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  gap: 10px;
-  height: max-content;
-  width:92%;
-}
-.button{
-  width:300px;
-  margin-bottom: 10px;
-}
-}
-
-
-
-
-
-/* banner  styling section end */
-
-
-
-body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /*popular Section styles */
-    .popular-container{
-      width:1170px;
-      display:flex;
-      gap:15px;
-      padding: 0;
-      margin: 0;
-      justify-content: space-between;
-      gap: 47px;
-    }
-    .popular-left,.popular-right{
-      width:50%;
-        
-        height:550px;
-    }
-    .popular-left{
-      padding: 10px;
-    }
-    .popular-left h2{
-      font-size:40px;
-    font-weight: 800;
-    }
-    .popular-left button{
-      border:none;
-      outline:none;
-      padding-top:1.5px ;
-      padding-bottom:1.5px ;
-      width:174px;
-      height: 52px;
-      border-radius: 8px;
-      color:#fff;
-      font-size: 20px;
-    }
-    .popular-right img{
-      width:540px;
-      height:550px;
-      border-radius: 12px;
-      object-fit: cover;
-    }
-    @media only screen and (max-width: 600px) {
-      .popular-container{
-      width:600px;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      border:2px solid teal;
-      justify-content: center;
-      padding-right: 40px;
-      
-    }
-    .popular-right{
-      padding-top: 267px;
-      display:flex;
-      justify-content: center;
-    }
-    .popular-right img{
-      width:360px;
-      height:300px;
-      border-radius: 12px;
-      object-fit: cover;
-      
-      border-radius:10% ;
-     
-
-    }
-}
-    
-  .container {
-      width: 1170px;
-      height: auto;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-    }
-
-    .image {
-      height: 286px;
-      object-fit: cover;
-    }
-
-    .row-1 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .row-2 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .row-3 {
-      grid-template-columns: 473px 474px;
-    }
-
-    section {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 20px;
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-  
-      .choose-title {
-        font-size: 24px;
-        font-weight: bold;
+
+    body p{
+      font-size: 16px;
+      font-weight: 400;
+      color:#5A5A5D;
+    }
+
+      ul {
+        max-width: 550px;
+        margin: 0 auto 50px auto;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      header {
+      background-color: #fff;
+      color: black;
+      padding: 20px 0;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 50px;
+      display: flex;
+      gap: 3px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav .travel {
+      color: #ff5400;
+      font-weight: 800;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #424247;
+      text-decoration: none;
+    }
+
+    ul li a.active {
+      font-weight: bold;
+      color: #ff5400;
+    }
+
+    .display-hamburger {
+
+    }
+
+
+    @media (max-width: 600px) {
+      nav ul {
+        display: block;
+      }
+
+      .display-hamburger {
+        display: block;
+      }
+
+      nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 50px;
+      display: flex;
+      gap: 3px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav .travel {
+      color: #ff5400;
+      font-weight: 800;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #424247;
+      text-decoration: none;
+    }
+
+    ul li a.active {
+      font-weight: bold;
+      color: #ff5400;
+    }
+
+    .display-hamburger {
+      display: none;
+    }
+    .display-hamburger img {
+      display: block;
+      width: 20px;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      nav{
+     width:90%;
+     margin: 0 auto;
+      }
+      nav ul a{
+        display: none;
+      }
+
+      .display-hamburger {
+        display: block;
+      }
+
+      .display-hamburger img {
+        display: block;
+        width: 20px;
+        height: auto;
+      }
+
+      nav ul li {
+        display: block;
+        margin-right: 0;
         margin-bottom: 10px;
       }
-  
-      .choose-paragraph {
-        line-height: 1.5;
-        margin-bottom: 20px;
+    }
+
+
+    @media (min-width: 992px) {
+      .display-hamburger {
+        display: none;
       }
-  
-      /* Card styles */
-      .card-container {
+      .display-hamburger img{
+        display: none;
+      }
+
+      nav ul {
+        display: flex;
+      }
+    }
+
+      nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+
+    @media (min-width: 992px) {
+      .display-hamburger {
+        display:none;
+      }
+
+      nav ul {
+        display: flex;
+      }
+    }
+      .content {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .banner {
+        width: 1170px;
+        height: 500px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('https://i.ibb.co/8dPty1b/Group-13-1-1.png');
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        border-radius: 16px;
+        position:relative;
+      }
+
+      .banner-text {
+        position: absolute;
+        top: 106px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 64px;
+        font-weight: 800;
+      }
+      .banner-paragraph {
+        position: absolute;
+        top: 173px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        width: 120%;
+      }
+      .button-container {
+        position: absolute;
+        top: 332px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 800px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.30);
+        border-radius: 8px;
         display: flex;
         justify-content: space-between;
-      }
-  
-      .card {
-        width: calc(50% - 10px); /* Adjust for margin */
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-  
-      .card-title {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-  
-      .card-paragraph {
-        line-height: 1.5;
-      }
-  
-      .card img {
-        width: 64px;
-        height: 64px;
-        margin-right: 10px;
+        align-items: center;
+        padding: 0 20px;
       }
 
+      .button {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-      /* Single section styles */
-    .single-section {
-        margin: 50px auto;
-        width: 573px;
-        height: 264px;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
+      .button-1:hover {
+        background-color: #ddd;
       }
+    .input-1{
+      position:relative;
+    }
+    select{
+      background:transparent;
+      border:none;
+      outline:none ;
+    }
+    .select-1{
+      position:absolute;
+      top:0;
+      right: 0;
+    }
+
+    .button-1 {
+      padding-left: 30px;
+      background-image: url('https://i.ibb.co/s2JfBQD/select.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+
+    .icon-1 {
+      width: calc(100% - 30px); icon */
+    }
+
+    .find-button{
+      background:#FF5400;
+      width:174px;
+    }
+    input{
+      width:174px;
+    }
+
+    .find-button {
+      background-image: url('https://i.ibb.co/bz83vjs/search-icon.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+
+    }
+    button{
+
+      background:#FF5400;
+    }
+
+    /*  media-query for banner section making responsive*/
+    @media only screen and (max-width: 600px){
+    .banner{
+      width:70%;
+      height: 483px;
+    }
+    .banner-text{
+      color:#fff;
+      font-size:22px;
+      text-align: center;
+      width:max-content;
+      margin-top: -68px;
+    }
+
+    .banner-paragraph{
+      top:60px;
+      font-size: 15px;
+    }
+    .button-container{
+      top:181px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      flex-direction: column;
+      padding-bottom: 5px;
+      gap: 10px;
+      height: max-content;
+      width:92%;
+    }
+    .button{
+      width:300px;
+      margin-bottom: 10px;
+    }
+    }
+
+
+
+
+
+    /* banner  styling section end */
+
+
+
+    body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /*popular Section styles */
+        .popular-container{
+          width:1170px;
+          display:flex;
+          gap:15px;
+          padding: 0;
+          margin: 0;
+          justify-content: space-between;
+          gap: 47px;
+        }
+        .popular-left,.popular-right{
+          width:50%;
+
+            height:550px;
+        }
+        .popular-left{
+          padding: 10px;
+        }
+        .popular-left h2{
+          font-size:40px;
+        font-weight: 800;
+        }
+        .popular-left button{
+          border:none;
+          outline:none;
+          padding-top:1.5px ;
+          padding-bottom:1.5px ;
+          width:174px;
+          height: 52px;
+          border-radius: 8px;
+          color:#fff;
+          font-size: 20px;
+        }
+        .popular-right img{
+          width:540px;
+          height:550px;
+          border-radius: 12px;
+          object-fit: cover;
+        }
+        @media only screen and (max-width: 600px) {
+          .popular-container{
+          width:600px;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          border:2px solid teal;
+          justify-content: center;
+          padding-right: 40px;
+
+        }
+        .popular-right{
+          padding-top: 267px;
+          display:flex;
+          justify-content: center;
+        }
+        .popular-right img{
+          width:360px;
+          height:300px;
+          border-radius: 12px;
+          object-fit: cover;
+
+          border-radius:10% ;
+
+
+        }
+    }
+
+      .container {
+          width: 1170px;
+          height: auto;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+
+        .image {
+          height: 286px;
+          object-fit: cover;
+        }
+
+        .row-1 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .row-2 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .row-3 {
+          grid-template-columns: 473px 474px;
+        }
+
+        section {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+
+          .choose-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .choose-paragraph {
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
+
+          /* Card styles */
+          .card-container {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .card {
+            width: calc(50% - 10px); /* Adjust for margin */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .card-paragraph {
+            line-height: 1.5;
+          }
+
+          .card img {
+            width: 64px;
+            height: 64px;
+            margin-right: 10px;
+          }
+
+
+          /* Single section styles */
+        .single-section {
+            margin: 50px auto;
+            width: 573px;
+            height: 264px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          }
+
+          .single-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .single-paragraph {
+            line-height: 1.5;
+          }
+
+          .single-img {
+            width: 64px;
+            height: 64px;
+          }
+
+          
+.destination-grid-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 300px 286px 300px;
+  gap:10px;
+  width: 1170px;
+}
+
+.destination-grid-container .row-1 {
+  display: flex;
   
-      .single-title {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-  
-      .single-paragraph {
-        line-height: 1.5;
-      }
-  
-      .single-img {
-        width: 64px;
-        height: 64px;
-      }
-      
-      .grid-container{
-       display:grid;
-       grid-template-columns:1fr ;
-       grid-template-rows:300px 286px 300px ;
-       border:2px solid red;
-      }
-     
+  gap: 10px;
+}
+
+.destination-grid-container .row-1-left,
+.destination-grid-container .row-1-right {
+  width: 50%;
+  position: relative;
+  overflow: hidden; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-1-left p,
+.row-1-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Background Images */
+.row-1-left {
+  background-image: url('./images/Rectangle 5.png');
+}
+
+.row-1-right {
+  background-image: url('./images/Rectangle 8.png');
+}
+
+
+.destination-grid-container .row-2 {
+  display: flex;
+  gap: 10px;
+  margin:0;
+}
+
+.row-2-left,
+.row-2-middle,
+.row-2-right {
+position: relative; 
+}
+
+.row-2-left p,
+.row-2-middle p,
+.row-2-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff; 
+  font-size: 28px; 
+  font-weight: 800; 
+}
+
+.row-2-left{
+  width:374px;
+  height:286px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 6.png');
+  background-size: cover;
+  background-position: center;
+}
+.row-2-middle{
+  width:474px;
+  height:286px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 7.png');
+  background-size: cover;
+  background-position: center;
+}
+.row-2-right{
+  margin:0;
+  width:299px;
+  height:288px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 9.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+/* General styles */
+.destination-grid-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 300px 286px 300px;
+  gap: 10px;
+  width: 100%; /* Updated to make it responsive */
+  max-width: 1170px; /* Added max-width for responsiveness */
+  margin: 0 auto; /* Center aligning */
+}
+
+/* Row 1 styles */
+.destination-grid-container .row-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.destination-grid-container .row-1-left,
+.destination-grid-container .row-1-right {
+  width: 50%;
+  position: relative;
+  overflow: hidden; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-1-left p,
+.row-1-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Background Images */
+.row-1-left {
+  background-image: url('./images/Rectangle 5.png');
+}
+
+.row-1-right {
+  background-image: url('./images/Rectangle 8.png');
+}
+
+/* Row 2 styles */
+.destination-grid-container .row-2 {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.row-2-left,
+.row-2-middle,
+.row-2-right {
+  position: relative; 
+}
+
+.row-2-left p,
+.row-2-middle p,
+.row-2-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  font-size: 28px; 
+  font-weight: 800; 
+}
+
+.row-2-left {
+  width: 374px;
+  height: 286px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.row-2-middle {
+  width: 474px;
+  height: 286px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.row-2-right {
+  width: 299px;
+  height: 288px;
+  border-radius: 16px;
+  background-image: url('./images/Rectangle 9.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Row 3 styles */
+.destination-grid-container .row-3 {
+  display: flex;
+ 
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.row-3-left,
+.row-3-right {
+  position: relative; 
+}
+
+.row-3-left p,
+.row-3-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  font-size: 28px; 
+  font-weight: 800;
+}
+
+.row-3-left {
+  width: 483px;
+  height: 300px;
+  background: url('./images/Rectangle 10.png') center/cover;
+  margin: 0;
+  border-radius: 16px;
+}
+
+.row-3-right {
+  width: 673px;
+  height: 300px;
+  background: url('./images/Rectangle 11.png') center/cover no-repeat; 
+  margin: 0;
+  border-radius: 16px;
+}
+
+
+ .row-3{
+display:flex;
+border:1.2 solid green;
+padding: 0;
+margin: 0;
+overflow: hidden;
+justify-content: space-between;
+gap:1px;
+
+
+ }
   </style>
   <body>
     <header>
       <nav>
-        <label class="logo"><img src="./images/Group 40071 (2).png" alt="">Hero <span class="travel">Travel</span> </label>
+        <label class="logo"
+          ><img src="./images/Group 40071 (2).png" alt="" />Hero
+          <span class="travel">Travel</span>
+        </label>
         <ul>
           <li><a class="active" href="#">Home</a></li>
           <li><a href="#">Packages</a></li>
           <li><a href="#">Testimonial</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
-          <li  class="display-hamburger"><img src="./images/hamburger.png" alt=""></li>
+          <li class="display-hamburger">
+            <img src="./images/hamburger.png" alt="" />
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="banner">
       <!-- Banner content goes here -->
-      <div class="banner-text">Explore Your Travel
+      <div class="banner-text">
+        Explore Your Travel
 
-        <p class="banner-paragraph">Discover exotic destinations and hidden gems as you embark on a journey of exploration and adventure. Uncover the beauty of the horizone.</p>
+        <p class="banner-paragraph">
+          Discover exotic destinations and hidden gems as you embark on a
+          journey of exploration and adventure. Uncover the beauty of the
+          horizone.
+        </p>
       </div>
       <div class="button-container">
-        <input class="button " placeholder="Where Go"/>
-       
-        <input class="button button-1" placeholder="When"/>
-        <input  placeholder="Select Type" class="button button-1">
+        <input class="button" placeholder="Where Go" />
+
+        <input class="button button-1" placeholder="When" />
+        <input placeholder="Select Type" class="button button-1" />
         <button class="button find-button">find now</button>
       </div>
     </section>
@@ -573,87 +833,136 @@ body {
     <section>
       <div class="popular-container">
         <div class="popular-left">
-          
           <h2>Our Popular Tours</h2>
-          <p>Discover the world's most sought-after destinations, where adventure, relaxation, and cultural immersion await.
-    <br>
-    Explore our curated selection of popular destinations, each offering a unique blend of natural beauty, historical significance, and unforgettable experiences.</p>
-         
-              <ul class="popular-list" style="list-style-type: disc;">
-                <li>
-                  <h3>Exotic Beaches of Bali, Indonesia</h3>
-                 <a><p>Explore the stunning beaches of Bali, where turquoise waters meet soft sands, and vibrant culture awaits.</p></a> 
-                </li>
-                <li>
-                  <h3>Hiking Adventures in the Swiss Alps</h3>
-                  <p>Embark on an unforgettable journey through the majestic Swiss Alps, where breathtaking vistas and challenging trails await.</p>
-                </li>
-                <li>
-                  <h3>Cultural Delights of Kyoto, Japan</h3>
-                  <p>Immerse yourself in the rich history and traditions of Kyoto, Japan's ancient capital, where temples, gardens, and tea ceremonies abound.</p>
-                </li>
-              </ul>
+          <p>
+            Discover the world's most sought-after destinations, where
+            adventure, relaxation, and cultural immersion await.
+            <br />
+            Explore our curated selection of popular destinations, each offering
+            a unique blend of natural beauty, historical significance, and
+            unforgettable experiences.
+          </p>
+
+          <ul class="popular-list" style="list-style-type: disc">
+            <li>
+              <h3>Exotic Beaches of Bali, Indonesia</h3>
+              <a
+                ><p>
+                  Explore the stunning beaches of Bali, where turquoise waters
+                  meet soft sands, and vibrant culture awaits.
+                </p></a
+              >
+            </li>
+            <li>
+              <h3>Hiking Adventures in the Swiss Alps</h3>
+              <p>
+                Embark on an unforgettable journey through the majestic Swiss
+                Alps, where breathtaking vistas and challenging trails await.
+              </p>
+            </li>
+            <li>
+              <h3>Cultural Delights of Kyoto, Japan</h3>
+              <p>
+                Immerse yourself in the rich history and traditions of Kyoto,
+                Japan's ancient capital, where temples, gardens, and tea
+                ceremonies abound.
+              </p>
+            </li>
+          </ul>
           <button>Read More</button>
         </div>
         <div class="popular-right">
-          
           <div>
-            <img src="./images/Rectangle 4.png" alt="">
+            <img src="./images/Rectangle 4.png" alt="" />
           </div>
         </div>
-        
       </div>
-
-
     </section>
-       <!-- destination section start -->
-       <section>
-         <div class="grid-container" style="width:1170px">
-           <div class="row-1">
+    <!-- destination section start -->
+    <section>
+      
+        <div class="destination-grid-container">
+          <div  class="row-1">
+                 <div class="row-1-left">
+                    <p>Maldives</p>
+                 </div>
+                 <div class="row-1-right">2
+                  <p>Indonesia</p>
+                 </div>
+                 
+                </div>
+                <div class="row-2">
+                  <div class="row-2-left">
+                   <p>Srilanka</p>
+                  </div>
+                  <div class="row-2-middle">
+                    <p>North America</p>
+                  </div>
+                  <div class="row-2-right">
+                   <p>Kashmir</p>
 
-             <div style="display:flex">
-               <div style="width:573px;border:2px solid green">1</div>
-               <div style="width:573px;border:2px solid orangered">2
-
-
-               </div>
-             </div>
-           </div>
-           <div class="row-2">2</div>
-           <div class="row-3">
-            3
-           </div>
-         </div>
-      </section>
+                  </div>
+                  
+                </div>
+                <div class="row-3">
+                  
+                  <div class="row-3-left" >
+                    <p>Bangladesh</p>
+                  </div>
+                  <div class="row-3-right">
+                    <p>Bandarban</p>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </section>
 
     <!-- destination section end -->
-     <!-- choose section start -->
+    <!-- choose section start -->
     <section>
       <h2 class="choose-title">Choose Your Destination</h2>
-      <p class="choose-paragraph">Select your next adventure from our wide range of destinations. Whether you're seeking the tranquility of a tropical beach or the excitement of a bustling city, we have the perfect destination for you. Explore our selection and start planning your dream vacation today.</p>
-      
+      <p class="choose-paragraph">
+        Select your next adventure from our wide range of destinations. Whether
+        you're seeking the tranquility of a tropical beach or the excitement of
+        a bustling city, we have the perfect destination for you. Explore our
+        selection and start planning your dream vacation today.
+      </p>
+
       <div class="card-container">
         <div class="card">
-          <img src="./images/hotel 1.png" alt="Handpicked Hotels">
+          <img src="./images/hotel 1.png" alt="Handpicked Hotels" />
           <h3 class="card-title">Handpicked Hotels</h3>
-          <p class="card-paragraph">Discover handpicked hotels offering exceptional comfort and service. From luxurious resorts to boutique accommodations, we ensure your stay is memorable and worry-free.</p>
+          <p class="card-paragraph">
+            Discover handpicked hotels offering exceptional comfort and service.
+            From luxurious resorts to boutique accommodations, we ensure your
+            stay is memorable and worry-free.
+          </p>
         </div>
         <div class="card">
-          <img src="./images/map 1.png" alt="World Class Service">
+          <img src="./images/map 1.png" alt="World Class Service" />
           <h3 class="card-title">World Class Service</h3>
-          <p class="card-paragraph">Experience world-class service tailored to your needs. Our dedicated team is committed to providing personalized assistance and ensuring your journey is seamless from start to finish.</p>
+          <p class="card-paragraph">
+            Experience world-class service tailored to your needs. Our dedicated
+            team is committed to providing personalized assistance and ensuring
+            your journey is seamless from start to finish.
+          </p>
         </div>
-       
       </div>
       <div class="single-section">
-        <img src="./images/price-tag 1.png" alt="Best Price Guarantee" class="single-img">
+        <img
+          src="./images/price-tag 1.png"
+          alt="Best Price Guarantee"
+          class="single-img"
+        />
         <h3 class="single-title">Best Price Guarantee</h3>
-        <p class="single-paragraph">Enjoy peace of mind with our best price guarantee. We strive to offer you the most competitive prices without compromising on quality. Book with confidence knowing you're getting the best deal possible.</p>
+        <p class="single-paragraph">
+          Enjoy peace of mind with our best price guarantee. We strive to offer
+          you the most competitive prices without compromising on quality. Book
+          with confidence knowing you're getting the best deal possible.
+        </p>
       </div>
     </section>
-     <!-- choose section end -->
-    <main>
-  
-    </main>
+    <!-- choose section end -->
+    <main></main>
   </body>
 </html>
