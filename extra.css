@@ -1,0 +1,17 @@
+#responsive-destination-layout {
+    background: #00808078;
+    width: 1170px;
+    height: 230px;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+#responsive-destination-layout p {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    #responsive-destination-layout p {
+        color: greenyellow;
+    }
+}

@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./css/styles3.css" />
+    <title>Heroic Voyages</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="extra.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +21,9 @@
         padding: 0;
         box-sizing: border-box;
       }
-
+       body{
+        overflow:scroll;
+       }
     body p{
       font-size: 16px;
       font-weight: 400;
@@ -290,7 +294,7 @@
 
 
     .icon-1 {
-      width: calc(100% - 30px); icon */
+      width: calc(100% - 30px); 
     }
 
     .find-button{
@@ -315,7 +319,7 @@
     /*  media-query for banner section making responsive*/
     @media only screen and (max-width: 600px){
     .banner{
-      width:70%;
+      width:90%;
       height: 483px;
     }
     .banner-text{
@@ -363,23 +367,34 @@
           box-sizing: border-box;
         }
 
-        /*popular Section styles */
+        /*popular Section styling start*/
+
+      
         .popular-container{
+          overflow: hidden;
+          
           width:1170px;
           display:flex;
-          gap:15px;
-          padding: 0;
-          margin: 0;
+         padding: 0;
+          margin: 0 auto;
           justify-content: space-between;
-          gap: 47px;
+          align-items: center;
+          gap: 89px;
+        
+         margin-top: 100px;
+         margin-bottom: 100px;
+        
+         
+          
+          
         }
         .popular-left,.popular-right{
-          width:50%;
+          width:100%;
 
             height:550px;
         }
         .popular-left{
-          padding: 10px;
+          margin-top: -80px;
         }
         .popular-left h2{
           font-size:40px;
@@ -402,91 +417,330 @@
           border-radius: 12px;
           object-fit: cover;
         }
-        @media only screen and (max-width: 600px) {
-          .popular-container{
-          width:600px;
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-          border:2px solid teal;
-          justify-content: center;
-          padding-right: 40px;
-
-        }
-        .popular-right{
-          padding-top: 267px;
-          display:flex;
-          justify-content: center;
-        }
-        .popular-right img{
-          width:360px;
-          height:300px;
-          border-radius: 12px;
-          object-fit: cover;
-
-          border-radius:10% ;
-
-
-        }
+        /* Media query for popular section smaller screens */
+  @media screen and (max-width: 600px) {
+    .popular-container {
+     width:90%;
+      flex-direction: column;
+      margin-top: 20px;
     }
 
-      .container {
-          width: 1170px;
-          height: auto;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 20px;
-        }
+    .popular-container {
+      flex-direction: column;
+    }
+   .popular-right img {
+    width:100%;
+   
+  }
+    .popular-right {
+      
+      padding: 0;
+      width:100%;
+      margin-top:-100px;
+    }
+    
+  }
 
-        .image {
-          height: 286px;
-          object-fit: cover;
-        }
+         
 
-        .row-1 {
-          grid-template-columns: repeat(2, 1fr);
-        }
 
-        .row-2 {
-          grid-template-columns: repeat(3, 1fr);
-        }
 
-        .row-3 {
-          grid-template-columns: 473px 474px;
-        }
 
-        section {
-            max-width: 1170px;
-            margin: 0 auto;
-            padding: 20px;
-          }
 
-          .choose-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-          }
 
-          .choose-paragraph {
-            line-height: 1.5;
-            margin-bottom: 20px;
-          }
+/* General styles for destination section */
+.destination-grid-container{
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:300px 286px 300px;
+  gap: 10px;
+  background: blue;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+.destination-row-1{
+background: #0000ff1f;
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-wrap: nowrap;
+gap: 20px;
+
+}
+.destination-row-1-left,.destination-row-1-right{
+width:50%;
+background: #3acd327c;
+height: 300px;
+}
+
+.destination-row-1-left,.destination-row-1-right,.destination-row-2-left,.destination-row-1-middle,.destination-row-1-right,.destination-row-3-right,.destination-row-3-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border:1.3px solid white;
+  border-radius: 16px;
+  
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+}
+
+.destination-row-2-left,.destination-row-2-right,.destination-row-2-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border:1.3px solid white;
+  border-radius: 16px;
+  
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+}
+.destination-row-3-left,.destination-row-3-right{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border:1.3px solid white;
+  border-radius: 16px;
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+}
+
+
+.destination-row-1-left >p,.destination-row-1-right >p,.destination-row-2-left >p,.destination-row-2-middle >p,.destination-row-2-right> p,.destination-row-3-left >p
+{
+color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 28px;
+font-weight: 800;
+ 
+}
+.destination-row-3-right p,.destination-row-3-left p{
+  color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 28px;
+font-weight: 800;
+  
+}
+.destination-row-1-right{
+  border:1.3px solid #a70808;
+  border-radius: 16px;
+
+}
+.destination-row-2{
+  width: 100%;
+  background: #96116e7d;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow: scroll;
+  padding: 0;
+  height: 286px;
+  
+
+ }
+
+ .destination-row-2-left{
+  background: #1678a573;
+  width: 374px;
+  max-height:286px ;
+  
+ }
+ .destination-row-2-middle{
+  background: #16a56273;
+  width: 480px;
+  border:1.3px solid white;
+  border-radius: 16px;
+
+ }
+ .destination-row-2-right{
+  background: #610cbc73;
+  width: 274px;
+  border:1.3px solid white;
+  border-radius: 16px;
+
+ }
+
+ .destination-row-2-left,.destination-row-2-middle,.destination-row-2-right{
+  border-radius: 16px;
+  max-height: 286px;
+ }
+ .destionation-row-3{
+  background: #0ad3a4;
+  width: 100%;
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+ }
+
+.destination-row-3-left{
+  width: 39%;
+  height: 300px;
+  background: rgba(255, 99, 71, 0.559);
+  border-radius: 16px;
+}
+.destination-row-3-right{
+  width: 59%;
+  height: 300px;
+  background: rgba(255, 99, 71, 0.559);
+  border-radius: 16px;
+}
+
+.destination-row-3-left p,
+.destination-row-3-right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  
+}
+ .destination-row-1,.destination-row-2{
+  margin-bottom: 20px;
+ }
+/* all image setting for the destination */
+.destination-row-1-left{
+  background: url("./images/Rectangle 5.png");
+  min-height: 286px;
+}
+
+.destination-row-1-right{
+  background: url("./images/Rectangle 8.png");
+}
+.destination-row-2-left{
+  background: url("./images/Rectangle 6.png");
+}
+.destination-row-2-middle{
+  background: url("./images/Rectangle 7.png");
+}
+.destination-row-2-right{
+  background: url("./images/Rectangle 9.png");
+}
+.destination-row-3-left{
+  background: url("./images/Rectangle 11.png");
+}
+.destination-row-3-right{
+  background: url("./images/Rectangle 10.png");
+  background-size: cover;
+  position: relative;
+}
+
+}
+.destination-row-2-left,.destination-row-2-right1,.destination-row-2-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1.3px solid white;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  object-fit: cover; 
+  background: red;
+  
+}
+
+/* making mobile responsive for the section */
+
+@media (max-width: 600px) {
+   .destination-grid-container {
+    width: 90%;
+    margin: 0 auto;
+    background: turquoise !important; 
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 50px;
+   }
+
+   .destination-row-1,.destination-row-2 {
+    flex-direction: column;
+    background: red;
+    width: 100%;
+   }
+
+   .destination-row-1-left,
+   .destination-row-1-right {
+    width: 100%; 
+    margin-bottom: 10px; 
+   }
+   .destination-row-2-left,.destination-row-2-middle,
+   .destination-row-2-right, {
+    width: 100%; 
+    margin-bottom: 10px; 
+    background:grey;
+    min-height:250px;
+   }
+   
+}
+
+
+
+
+
+  /* choose section start for styling */
+  
+  .choose-container {
+  margin-top: 100px;
+  width: 1170px;
+  margin: 0 auto; 
+  margin-top: 100px;
+}
+
+.choose-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.choose-paragraph {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 45px;
+  padding-top: 25px;
+}
+
+
 
           /* Card styles */
           .card-container {
             display: flex;
             justify-content: space-between;
+            padding-top: 30px;
           }
 
           .card {
-            width: calc(50% - 10px); /* Adjust for margin */
+            width: calc(50% - 10px);
             padding: 20px;
             border: 1px solid #ccc;
-            border-radius: 8px;
+            border-radius: 16px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
 
+
+         .card-blue-bg{
+          border-radius: 16px;
+          border: 1px solid #fbb56333;
+          background: #fbb5630d;
+          
+         }
+         .card-blue-bg{
+          background: #29cef60d;
+          border-radius: 16px;
+          border: 1px solid #29cef633;
+          
+         }
           .card-title {
             font-size: 18px;
             font-weight: bold;
@@ -503,8 +757,7 @@
             margin-right: 10px;
           }
 
-
-          /* Single section styles */
+            /* Single section styles */
         .single-section {
             margin: 50px auto;
             width: 573px;
@@ -515,6 +768,9 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            background: #e944440d;
+
+
           }
 
           .single-title {
@@ -532,270 +788,938 @@
             height: 64px;
           }
 
+/*media query for mobile responsive-ness */
+          @media screen and (max-width: 600px) { 
+  .choose-container {
+    width: 98%;
+    margin: 0 auto;
+    
+  }
+  .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+            
           
-.destination-grid-container {
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-template-rows: 300px 286px 300px;
-  gap:10px;
+}
+.card {
+width:95%;
+margin-bottom:10px;
+}
+.single-section{
+  width:92%;
+  margin-top:2px;
+}
+        }      
+          /* discount section start for styling */
+          .discount-container {
+            width: 1170px;
+            margin: 0 auto;
+           
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .discount-title {
+            font-size: 40px;
+            color: #131318;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .discount-title-icon-container{
+         
+          width: 80%;
+          margin: 0 auto;
+        }
+        .discount-paragraph {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #131318;
+            margin-bottom: 30px;
+            padding-top: 15px;
+           
+        }
+        .discount-paras{
+          width:80%;
+          text-align: justify;
+          margin: 0 auto;
+          margin-top:15px;
+        }
+        #discount-price{
+        margin-left: -300px;
+        color:#FF5400;
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 700;
+        }
+       
+       .book-now-btn{
+        background: #FF5400;
+        margin-left: -290px;
+        text-align: left;
+        width: 174px;
+        border:none;
+        outline:none;
+        padding: 10px;
+        text-align: center;
+        color:white;
+        font-size: 20px;
+        border-radius: 8px;
+        margin-bottom:40px;
+
+        
+       }
+       .discount-container >button{
+      background: #FF5400;
+      width: 210px;
+      height:52px;
+      border-radius:8px;
+      border-outline:none;
+      border:none;
+      color:white;
+      font-size:20px;
+      margin-top: 20px;
+       }
+        /* Additional styles for the blank divs */
+        .blank-div {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            
+            display: inline-block;
+        }
+
+        /* Styles for div1 */
+        #div1 {
+            width: 100%; 
+            height: 300px; 
+            max-width: 1170px; 
+            height: 500px;
+            border-radius: 16px;
+            background-image: url('./images/Group 39.png');  
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            position: relative; 
+            overflow:hidden;
+        }
+
+       
+        #div1-child {
+            width: 579px;
+            height: 389px;
+            background:rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 50%;
+            right: -19%;
+            transform: translate(-53%, -50%);
+            border-radius: 16px;
+        }
+       /* Styles for div2 */
+#div2 {
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    background-image: url('./images/Group 40.png');  
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative; 
+    overflow:hidden;
+}
+
+#div2-child {
+    width: 579px;
+    height: 389px;
+    background:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    
+}
+#div3 {
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    background-image: url('./images/Group 39.png');  
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative; 
+    overflow:hidden;
+}
+
+#div3-child {
+    width: 579px;
+    height: 389px;
+    background:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50%;
+    right:-19%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+}
+#discount-position{
+  position: absolute;
+    top: 166px;
+    left: 619px;
+    font-size: 24px;
+    font-weight: 700;
+    transform: translateX(-50%);
+}
+#discount-position h3{
+
+    font-size: 24px;
+    font-weight: 700;
+}
+#discount-position {
+
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* making mobile responsive for the discount section */
+
+@media (max-width: 600px) {
+  .discount-container {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+   }
+   #div1,#div2,#div3 {
+      width:100%;
+      height: 500px; 
+      border:1.4px solid red;
+        
+    }
+    #div1-child,#div2-child,#div3-child{
+      position: absolute;
+      left:228px;
+      width:90%;
+      height:80%;
+      transform: translate(-53%, -53%);
+      
+    }
+    .discount-title-icon-container{
+         
+         width: 80%;
+         margin: 0 auto;
+         font-size: 14px;
+       }
+    .discount-title-icon-container img{
+         
+         width: 40%;
+        
+       }
+    .book-now-btn{
+      margin-left:-155px;
+    }
+    #discount-price{
+      margin-left:-150px;
+    }
+    .discount-paras{
+      font-size: 14px;
+      margin-top: 16p;
+    }
+    .div1-child-container{
+      display: flex;justify-content: flex-start;gap:10px;
+      width:100px;
+      height:100%;
+      
+    }
+  }
+/* travel-tips styling section start */
+/* Base styles */
+.travel-tips-section {
   width: 1170px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 100px;
 }
 
-.destination-grid-container .row-1 {
-  display: flex;
-  
-  gap: 10px;
+.travel-tips-section h1 {
+    color: #333;
+    font-size: 24px;
 }
 
-.destination-grid-container .row-1-left,
-.destination-grid-container .row-1-right {
-  width: 50%;
-  position: relative;
-  overflow: hidden; 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.guides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.row-1-left p,
-.row-1-right p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+.tip {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Background Images */
-.row-1-left {
-  background-image: url('./images/Rectangle 5.png');
+.tip h2 {
+    color: #007BFF;
 }
 
-.row-1-right {
-  background-image: url('./images/Rectangle 8.png');
+.tip p {
+    color: #666;
 }
 
 
-.destination-grid-container .row-2 {
-  display: flex;
-  gap: 10px;
-  margin:0;
-}
-
-.row-2-left,
-.row-2-middle,
-.row-2-right {
-position: relative; 
-}
-
-.row-2-left p,
-.row-2-middle p,
-.row-2-right p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #fff; 
-  font-size: 28px; 
-  font-weight: 800; 
-}
-
-.row-2-left{
-  width:374px;
-  height:286px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 6.png');
-  background-size: cover;
-  background-position: center;
-}
-.row-2-middle{
-  width:474px;
-  height:286px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 7.png');
-  background-size: cover;
-  background-position: center;
-}
-.row-2-right{
-  margin:0;
-  width:299px;
-  height:288px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 9.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-/* General styles */
-.destination-grid-container {
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-template-rows: 300px 286px 300px;
-  gap: 10px;
-  width: 100%; /* Updated to make it responsive */
-  max-width: 1170px; /* Added max-width for responsiveness */
-  margin: 0 auto; /* Center aligning */
-}
-
-/* Row 1 styles */
-.destination-grid-container .row-1 {
-  display: flex;
-  gap: 10px;
-}
-
-.destination-grid-container .row-1-left,
-.destination-grid-container .row-1-right {
-  width: 50%;
-  position: relative;
-  overflow: hidden; 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.row-1-left p,
-.row-1-right p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
-}
-
-/* Background Images */
-.row-1-left {
-  background-image: url('./images/Rectangle 5.png');
-}
-
-.row-1-right {
-  background-image: url('./images/Rectangle 8.png');
-}
-
-/* Row 2 styles */
-.destination-grid-container .row-2 {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-}
-
-.row-2-left,
-.row-2-middle,
-.row-2-right {
-  position: relative; 
-}
-
-.row-2-left p,
-.row-2-middle p,
-.row-2-right p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; 
-  font-size: 28px; 
-  font-weight: 800; 
-}
-
-.row-2-left {
-  width: 374px;
-  height: 286px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 6.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.row-2-middle {
-  width: 474px;
-  height: 286px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 7.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.row-2-right {
-  width: 299px;
-  height: 288px;
-  border-radius: 16px;
-  background-image: url('./images/Rectangle 9.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Row 3 styles */
-.destination-grid-container .row-3 {
-  display: flex;
- 
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  justify-content: space-between;
-  gap: 1px;
-}
-
-.row-3-left,
-.row-3-right {
-  position: relative; 
-}
-
-.row-3-left p,
-.row-3-right p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; 
-  font-size: 28px; 
-  font-weight: 800;
-}
-
-.row-3-left {
-  width: 483px;
-  height: 300px;
-  background: url('./images/Rectangle 10.png') center/cover;
-  margin: 0;
-  border-radius: 16px;
-}
-
-.row-3-right {
-  width: 673px;
-  height: 300px;
-  background: url('./images/Rectangle 11.png') center/cover no-repeat; 
-  margin: 0;
-  border-radius: 16px;
-}
 
 
- .row-3{
-display:flex;
-border:1.2 solid green;
-padding: 0;
-margin: 0;
-overflow: hidden;
-justify-content: space-between;
-gap:1px;
+
+/* travel-related-section-styling-start */
+..travel-related-section {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+}
+
+.left-side {
+    width: 532px;
+    height: 424px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.right-side {
+    width: 610px;
+    height: 424px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 16px;
+    color: #5a5a5db0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #666;
+}
+
+.see-more-btn {
+    background-color: #FF5400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    width: 174px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background-color: #0056b3;
+}
+ .video-container iframe {
+ width:619px;
+ height: 450px;
 
 
  }
-  </style>
-  <body>
+ /* setting overlay-text on the video */
+ .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 620px; 
+    height: auto;
+    margin: 0 auto;
+}
+.video-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+
+}
+
+/* Responsive Design for travel relarated section */
+@media screen and (max-width: 600px) {
+    .travel-related-section {
+        width: 100%;
+       padding: 0;
+       
+    }
+
+    .container {
+        width:450px;
+        flex-direction: column;
+        margin: 0 auto;
+        
+      }
+      
+      .left-side,.right-side {
+        width:100%;
+        height: auto;
+        padding: 0;
+        max-width: 450px;
+        margin-bottom: 20px;
+        
+        
+       
+        margin:0 auto;
+    }
+    .right-side .video-container iframe{
+      width:450px;
+      margin: 0 auto;
+     
+      height:450px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+/* newletter-styling -section-start */
+.newsletter-container-1 {
+  width: 1170px;
+  height: 672px;
+
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+ 
+ 
+  gap: 20px;
+ 
+}
+
+.newsletter-left-container {
+  
+  border: 1.3px dotted red;
+  width: 474px;
+  height: 422px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
+}
+.newsletter-left-container button{
+  
+ width:100%;
+ padding: 10px 5px;
+ font-size:20px;
+ color:white;
+ border-radius: 8px;
+ outline: none;
+ border:none;
+}
+.newsletter-left-container::before {
+  
+  content:"Newsletter";
+  display:block;
+  font-family:mulish ;
+  font-size: 24px;
+  width: 120px;
+  height:50px;
+  position: absolute;
+  white-space: nowrap;
+  font-weight: 800;
+  top: 31px;
+  left: 45px;;
+  z-index:200;
+}
+.newsletter-left-container::after {
+  
+  content:"Get your daily dose of travel news & tips. Sign up today!";
+  display:block;
+  font-family:mulish ;
+  font-size: 16px;
+
+  height:50px;
+  position: absolute;
+  white-space:wrap;
+  font-weight: 400;
+  width:70%;
+  top: 64px;
+  left: 45px;
+  line-height:20px;
+  z-index:200;
+  color:#5A5A5D;
+}
+
+
+
+
+
+
+.newsletter-right-container {
+  
+  width: 672px;
+  height: 422px;
+  background:url('./images/mountain.png');
+  position: relative;
+  border-radius:16px ;
+}
+.overlay-container{
+  position: absolute;
+  bottom: -247px;
+  right: -333px;
+  background:#ff5400;
+  height: 120px;
+  width: 324px;
+  border-radius:16px;
+  padding-left: 20px;
+  transform: rotate(-19.628deg);
+  
+}
+.overlay-container p{
+  padding-top:  15px;
+ color:#fff;
+ font-size: 24px;
+ font-weight: 400;
+
+}
+.overlay-container h3{
+ color:#fff;
+ font-size: 32px;
+ font-weight: 800;
+ line-height: 10px;
+
+}
+
+.input1 {
+  margin-top: 120px;
+  border: none;
+}
+
+form input {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  text-align: center;
+  font-size: 16px;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+form input::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+
+
+  /* Media query for newsletter section screens smaller than 600px */
+  @media (max-width: 600px) {
+    .newsletter-container-1{
+      width:90%;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      flex-direction: column;
+     
+    }
+            .newsletter-right-container,
+            .newsletter-left-container {
+                max-width: 100%; 
+              }
+              .overlay-container{
+                width: 65%;
+                height: 30%;
+                text-align: center;
+                padding-left: 10px;
+                bottom: -178px;
+                right: -148px;
+              }
+              .overlay-container p{
+               padding-top: 20px;
+               font-size: 16px;
+               text-align: center;
+               
+
+              }
+              .overlay-container h3{
+               
+               font-size: 21px;
+               line-height:10%;
+
+              }
+
+            }
+
+/* footer styling section start */
+
+
+
+.footer {
+    background-color:rgba(19, 19, 24, 0.05);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    
+    bottom: 0;
+    width: 100%;
+    margin-top:5rem;
+    max-height:502px;
+   overflow: visible;
+   margin-top:-217px;
+}
+
+.footer-content {
+     margin-top: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 2px;
+  }
+  
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    width: 30px; 
+    margin: 0 5px; /
+}
+
+/* Media query for footer screens smaller than 600px */
+@media (max-width: 600px) {
+    .footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer-description{
+      width: 60%;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+}
+// styling destination section//
+.destination-container{
+    display:flex;
+    flex-direction: column;
+     margin: 0 auto;
+    
+}
+
+ .flex-item.item-1{
+    display:flex;
+   
+    gap:10px;
+    width:1170px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+} 
+.flex-item.item-1 >div:first-child,.flex-item.item-1 >div:last-child{
+color:white;
+    flex:1; 
+   
+}
+.flex-item.item-1 > div:first-child,
+.flex-item.item-1 > div:last-child {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+}
+
+.flex-item.item-1 > div:first-child {
+    background-image: url('./images/Rectangle 5.png');
+}
+
+.flex-item.item-1 > div:last-child {
+    background-image: url('./images/Rectangle 8.png');
+}
+
+
+
+
+.flex-item.item-2 > div:nth-child(2) {
+    background-image: url('https://rb.gy/yr4ham');
+}
+
+.flex-item.item-2 > div:last-child {
+    background-image: url('https://rb.gy/1grhth');
+}
+
+
+
+.flex-item.item-3 {
+    display: flex;
+    
+    position: relative;
+    
+    gap: 10px;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+
+.flex-item.item-3 > div:first-child {
+    color: white;
+    height: 300px;
+    width: 473px;
+    background: url("./images/Rectangle 11.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.flex-item.item-3 > div:last-child {
+    color: white;
+    height: 300px;
+    flex:1;
+    background: url("./images/Rectangle 10.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.flex-item.item-2{
+    display:flex;
+  
+    gap:10px;
+    width:1170px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+.flex-item.item-2 >div:first-child,.flex-item.item-2 >div:last-child , .flex-item.item-2 >div:nth-child(2) {
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+    background:url("https://rb.gy/1grhth");
+    object-fit: cover;
+}
+.flex-item.item-2 >div:first-child{
+    color:white;
+    width: 373px;
+    background: skyblue;
+    background: url("./images/Rectangle 6.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+.flex-item.item-2 >div:last-child{
+    color:white;
+    flex:1;
+    background: skyblue;
+    background: url("./images/Rectangle 9.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+.flex-item.item-2 >div:nth-child(2){
+    position:relative;
+    color:white;
+    width: 473px;
+   
+    background: url("./images/Rectangle 7.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.flex-item.item-3 > div:first-child{
+  position: relative;
+}
+.flex-item.item-3 > div:last-child{
+  position: relative;
+}
+
+.overlay-container {
+  position: relative;
+  
+}
+ .flex-item.overlay-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+.flex-item > div:last-child,.flex-item > div:first-child, .flex-item > div:nth-child(2){
+
+border-radius: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-item {
+        flex-direction: column;
+    }
+
+    .flex-item > div {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      object-fit: cover;
+      width: 100%; 
+      height: 300px; 
+      margin: 0 auto;
+      margin-right: 10px;
+    }
+    .flex-item.item-1 {
+    width:450px;
+    flex-direction: column;
+    margin-top: 10px;
+  
+    height: 600px;
+    }
+    .flex-item.item-1 > div {
+    height: 50%; 
+    width: 100%;
+    max-width: 430px; 
+    background-size: cover; 
+    background-position: center; 
+    }
+  
+  .flex-item.item-2 {
+    width:450px;
+    flex-direction: column;
+    margin-top: 10px;
+   
+    height: 900px;
+  }
+  .flex-item.item-2 > div {
+    height: 33.33%; 
+    width: 100%;
+    max-width: 430px; 
+    background-size: cover; 
+    background-position: center; 
+  }
+
+  .flex-item.item-2 > div:first-child {
+    width:470px; 
+  }
+  .flex-item.item-3 {
+    width:450px;
+    flex-direction: column;
+    margin-top: 10px;
+    
+    height: 600px;
+  }
+  .flex-item.item-3 > div {
+    height: 50%; 
+    width: 100%;
+    max-width: 430px; 
+    max-height:400px ;
+   
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .flex-item.item-3> div:last-child{
+
+    height: 100px;
+  }
+
+}
+.video-overlay-container {
+  position: relative;
+  height: 421px;
+  width: 620px;
+}
+.video-overlay-container iframe{
+  
+  height: 421px;
+  width: 620px;
+}
+
+.video-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.video-overlay-text p{
+ font-size: 24px;
+ font-weight:600;
+ color:#fff;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.overlay-text p{
+ font-size: 24px;
+ font-weight:600;
+ color:#fff;
+}
+
+
+</style>
+<body>
     <header>
       <nav>
         <label class="logo"
-          ><img src="./images/Group 40071 (2).png" alt="" />Hero
-          <span class="travel">Travel</span>
+          ><img src="./images/Group 40071 (2).png" alt="" />Heroic
+          <span class="travel">Journey</span>
         </label>
         <ul>
           <li><a class="active" href="#">Home</a></li>
@@ -831,6 +1755,8 @@ gap:1px;
     </section>
     <!-- popular section start -->
     <section>
+         
+          
       <div class="popular-container">
         <div class="popular-left">
           <h2>Our Popular Tours</h2>
@@ -838,9 +1764,7 @@ gap:1px;
             Discover the world's most sought-after destinations, where
             adventure, relaxation, and cultural immersion await.
             <br />
-            Explore our curated selection of popular destinations, each offering
-            a unique blend of natural beauty, historical significance, and
-            unforgettable experiences.
+           
           </p>
 
           <ul class="popular-list" style="list-style-type: disc">
@@ -877,59 +1801,61 @@ gap:1px;
           </div>
         </div>
       </div>
+    
     </section>
     <!-- destination section start -->
-    <section>
-      
-        <div class="destination-grid-container">
-          <div  class="row-1">
-                 <div class="row-1-left">
-                    <p>Maldives</p>
-                 </div>
-                 <div class="row-1-right">2
-                  <p>Indonesia</p>
-                 </div>
-                 
-                </div>
-                <div class="row-2">
-                  <div class="row-2-left">
-                   <p>Srilanka</p>
-                  </div>
-                  <div class="row-2-middle">
-                    <p>North America</p>
-                  </div>
-                  <div class="row-2-right">
-                   <p>Kashmir</p>
-
-                  </div>
-                  
-                </div>
-                <div class="row-3">
-                  
-                  <div class="row-3-left" >
-                    <p>Bangladesh</p>
-                  </div>
-                  <div class="row-3-right">
-                    <p>Bandarban</p>
-                  </div>
-                </div>
-              </div>
+     <section>
+      <div class="destination-container">
+         
+        <div class="flex-item item-1">
+          <div><div class="overlay-text">Maldives</div></div>
+          <div><div class="overlay-text">Srilanka</div></div>
+          
+        </div>
+        <div class="flex-item item-2">
+          <div><div class="overlay-text">Srilanka</div><div>
+            <div class="overlay-text">Srilanka</div>
+          </div></div>
+          <div><div>
+            <div class="overlay-text">North America</div>
+          </div></div>
+          <div>
+            <div>
+              <div class="overlay-text">Kashmir</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-item item-3">
+          <div class=".overlay-container">
+            <div class="overlay-text">Bangladesh</div>
+          </div>
+          <div>
+            <div>
+              <div class="overlay-text">Bandarban</div>
+            </div>
+          </div>
+          
+        </div>
+       
       </div>
+      
     </section>
-
-    <!-- destination section end -->
+        
+         
+    <!-- destination section end   -->
     <!-- choose section start -->
     <section>
-      <h2 class="choose-title">Choose Your Destination</h2>
+    <div class="choose-container">
+    
+     <h2 class="choose-title">Why Choose Us</h2>
       <p class="choose-paragraph">
         Select your next adventure from our wide range of destinations. Whether
         you're seeking the tranquility of a tropical beach or the excitement of
         a bustling city, we have the perfect destination for you. Explore our
         selection and start planning your dream vacation today.
       </p>
-
-      <div class="card-container">
-        <div class="card">
+       <div class="card-container">
+        <div class="card card-light-red">
           <img src="./images/hotel 1.png" alt="Handpicked Hotels" />
           <h3 class="card-title">Handpicked Hotels</h3>
           <p class="card-paragraph">
@@ -938,7 +1864,7 @@ gap:1px;
             stay is memorable and worry-free.
           </p>
         </div>
-        <div class="card">
+        <div class="card card-blue-bg">
           <img src="./images/map 1.png" alt="World Class Service" />
           <h3 class="card-title">World Class Service</h3>
           <p class="card-paragraph">
@@ -948,6 +1874,10 @@ gap:1px;
           </p>
         </div>
       </div>
+    </div>
+     
+
+     
       <div class="single-section">
         <img
           src="./images/price-tag 1.png"
@@ -963,6 +1893,185 @@ gap:1px;
       </div>
     </section>
     <!-- choose section end -->
+
+    <!-- discount section start -->
+<section>
+
+<div class="discount-container">
+     <div class="discount-head">
+      <h3>Deals & Discounts</h3>
+      <p>Explore our exclusive collection of deals and discounts! From fashion to electronics, find incredible savings on a wide range of products. Don't miss out on these limited-time offers and grab your favorites today!</p>
+      
+    
+    </div>
+     <div class="blank-div" id="div1">
+    
+      <div id="div1-child">
+        <div style="display:flex;gap:10px;justify-content: center;padding-left: 5px;" class="discount-title-icon-container">
+          <span style="display:flex;justify-content:flex-start;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/clock.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+          <span style="display:flex;justify-content:center;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/max.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+          <span style="display:flex;justify-content:flex-end;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/map.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+        </div>
+        <div id="discount-po" style="margin-top:40px;"><h3>Tour To Satorini</h3>
+          <p class="discount-paras">Amet consectetur. Vulputate commodo felis 
+            molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+          <p id="discount-price" >Price: $1300-$1500</p>
+          <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="blank-div" id="div2">
+        <div id="div2-child">
+          <div style="display:flex;gap:10px;justify-content: center;padding-left: 5px;" class="discount-title-icon-container">
+          <span style="display:flex;justify-content:flex-start;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/clock.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+          <span style="display:flex;justify-content:center;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/max.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+          <span style="display:flex;justify-content:flex-end;align-items: center;gap:5px;padding-top: 50px;">
+            <img src="./assets/map.png" alt=""><span>7 Day / 6 Night</span>
+          </span>
+        </div>
+          <div id="discount-po" style="margin-top:40px;"><h3>Tour To Satorini</h3>
+            <p class="discount-paras">Amet consectetur. Vulputate commodo felis 
+              molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+            <p id="discount-price" >Price: $1300-$1500</p>
+            <button class="book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="blank-div" id="div3">
+        
+            <div id="div3-child">
+              <div style="display:flex;gap:10px;justify-content: center;padding-left: 5px;" class="discount-title-icon-container">
+                <span style="display:flex;justify-content:flex-start;align-items: center;gap:5px;padding-top: 50px;">
+                  <img src="./assets/clock.png" alt=""><span>7 Day / 6 Night</span>
+                </span>
+                <span style="display:flex;justify-content:center;align-items: center;gap:5px;padding-top: 50px;">
+                  <img src="./assets/max.png" alt=""><span>7 Day / 6 Night</span>
+                </span>
+                <span style="display:flex;justify-content:flex-end;align-items: center;gap:5px;padding-top: 50px;">
+                  <img src="./assets/map.png" alt=""><span>7 Day / 6 Night</span>
+                </span>
+              </div>
+            
+              <div id="discount-po" style="margin-top:40px;"><h3>Tour To Satorini</h3>
+                <p class="discount-paras">Amet consectetur. Vulputate commodo felis 
+                  molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                <p id="discount-price" >Price: $1300-$1500</p>
+                <button class="book-now-btn">Book Now</button>
+                </div>
+              
+            </div>
+            
+          </div>
+          
+          <button style="text-align: center;">See All Packages</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- discount secion end -->
+    <!--  travel-tips section start --> 
+    <div class="travel-tips-section">
+    <h1>Travel Tips and Guides</h1>
+    <div class="guides">
+        <article class="tip">
+            <h2>Packing Like a Pro</h2>
+            <p>Learn to pack efficiently, bringing exactly what you need without over-packing. Our guide covers essentials, multi-use items, and how to save space in your suitcase.</p>
+        </article>
+        <article class="tip">
+            <h2>Mastering Local Transportation</h2>
+            <p>Navigate public transportation like a local. This guide includes tips on using subways, buses, and taxis, as well as information on bike and scooter rentals.</p>
+        </article>
+        <article class="tip">
+            <h2>Finding Hidden Gems</h2>
+            <p>Discover the off-the-beaten-path attractions that make a destination truly special. We provide tips on how to find local favorites and hidden treasures.</p>
+        </article>
+        <article class="tip">
+            <h2>Eating Like a Local</h2>
+            <p>Avoid tourist traps and experience authentic local dining. Our guide helps you find the best spots to eat and how to order like a local.</p>
+        </article>
+    </div>
+</div>
+   
+     
+     
+    </section>
+      <!-- travel-related-section start -->
+      <section class="travel-related-section">
+        <div class="container">
+            <div class="left-side">
+                <h2>A Simple Perfect Place To Get Lost</h2>
+                <p>Find your escape in the mesmerizing beauty of nature. Lose yourself in breathtaking landscapes and unforgettable adventures.</p>
+                <ul>
+                    <li>Explore stunning vistas and immerse yourself in the beauty of natural landscapes</li>
+                    <li>Experience the tranquility of untouched wilderness and discover hidden gems off the beaten path</li>
+                </ul>
+                <button class="see-more-btn">See More</button>
+            </div>
+            <div class="right-side">
+                
+                <div class="video-overlay-container">
+                    <iframe   src="https://player.vimeo.com/video/377069770" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-overlay-text">
+                       <p>Watch Our Mountain in Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- newletter section start -->
+ <section>
+  <div class="newsletter-container-1">
+    <div class="newsletter-left-container">
+      <form action="">
+        <input type="text" placeholder="Enter Your Email" class="input1"><br>
+        <input type="text" placeholder="Enter Your Password">
+        <br>
+        <button>subscribe</button>
+      </form>
+    </div>
+    <div class="newsletter-right-container">
+     <div class="overlay-container">
+       <p>Travel.com</p>
+       <h3>Save up to 70%</h3>
+       
+     </div>
+    </div>
+  </div>
+</section>
+
+ <!-- footer section start -->
+ 
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="./assets/logo.png" alt="Logo" class="footer-logo">
+        <p class="footer-title"><span style="color:#FF5400">Heroic</span> Journey</p>
+    </div>
+    <p class="footer-description">Explore the world with our exciting travel packages. Whether it's a relaxing beach getaway or an adventurous mountain trek, we've got you covered.</p>
+  
+    <div class="social-icons">
+        <img src="./assets/social-media.svg" alt="">
+    </div>
+    <p>&copy;2017, All Rights Reserved.</p>
+</footer>
+ 
+
+
+   
+
+
+
+   
     <main></main>
   </body>
 </html>
